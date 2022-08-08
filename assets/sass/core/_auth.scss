@@ -1,0 +1,184 @@
+.auth {
+  padding: 15px;
+  background-color: var(--bgr-color);
+  max-width: 100%;
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .bgr-danger {
+    background-color: rgb(194, 37, 10);
+  }
+
+  .bgr-success {
+    background-color: rgb(85, 139, 3);
+
+  }
+
+
+  &__logo-top {
+    max-width: 150px !important;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+  }
+
+
+  &__form {
+
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 0 0.375rem 0.25rem rgb(0 0 0 / 15%);
+    margin-top: 3rem;
+    width: 400px;
+  }
+
+  &__title {
+    color: #cbcbe2;
+  }
+
+
+
+  &__subtitle {
+    color: #cbcbe2;
+  }
+
+  &__label {
+    display: inline-block;
+    font-size: 0.9375rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+
+  }
+
+
+  &__control {
+    display: block;
+    width: 100%;
+    padding: 7px 14px;
+    font-size: 0.9375rem;
+    font-weight: 400;
+    background-color: #fff;
+    border: 1px solid #d9dee3;
+    appearance: none;
+    border-radius: 0.375rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+
+    &:focus {
+      border: 1px solid #EC379C;
+
+    }
+
+  }
+
+  .input__group {
+    display: flex;
+    align-items: stretch;
+
+    &:focus-within .auth__control,
+    &:focus-within .hide-text-input {
+      border-color: #EC379C;
+
+    }
+  }
+
+  input[name='password'] {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-right: 0;
+
+  }
+
+  .hide-text-input {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding: 7px 14px;
+    font-size: 0.9375rem;
+    font-weight: 400;
+    line-height: 1.53;
+    color: #697a8d;
+    text-align: center;
+    background-color: #fff;
+    border: 1px solid #d9dee3;
+    border-top-right-radius: 0.375rem;
+    border-bottom-right-radius: 0.375rem;
+    border-left: 0;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+
+  }
+
+
+
+
+  &__check {
+    display: block;
+    min-height: 1.5rem;
+    margin-bottom: 0.125rem;
+
+    &-input {
+      width: 1rem;
+      height: 1rem;
+      border-radius: 100rem;
+      margin-top: 0.165em;
+      margin-right: 0.5rem;
+      vertical-align: top;
+      background-color: #fff;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+      border: 1px solid #d9dee3;
+      appearance: none;
+      border-radius: 0.25em;
+
+      &:checked {
+        background-color: #EC379C;
+        border-color: #EC379C;
+        box-shadow: 0 2px 4px 0 rgb(105 108 255 / 40%);
+      }
+
+      &:checked[type=checkbox] {
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M6 10l3 3l6-6'/%3e%3c/svg%3e");
+      }
+    }
+  }
+
+  &__end {
+    text-align: center;
+
+    a {
+      color: #EC379C;
+    }
+  }
+
+  .button {
+    cursor: pointer;
+    border: 0;
+    outline: none;
+    font-size: 0.9375rem;
+    padding: 10px 20px;
+    border-radius: 0.375rem;
+    color: #fff;
+    font-weight: 500;
+
+    &--auth {
+      display: block;
+      width: 100%;
+      margin-bottom: 0.5rem;
+      background-color: #EC379C;
+
+    }
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+
+
+
+
+}

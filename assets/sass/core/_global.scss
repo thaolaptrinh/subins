@@ -1,0 +1,62 @@
+html {
+  scroll-behavior: smooth;
+
+
+
+}
+
+
+::selection {
+  background: #4792FF;
+  color: #fff;
+}
+
+::-moz-selection {
+  background: #4792FF;
+  color: #fff;
+}
+
+
+
+body {
+  font-family: var(--primary-font);
+  color: var(--text-color);
+  font-weight: 400;
+  overflow-x: hidden;
+  cursor: url('https://img.icons8.com/glyph-neue/32/F25081/cursor.png'), auto;
+}
+
+
+li:hover,
+a:hover,
+input:hover,
+select:hover,
+button:hover {
+  cursor: url('https://img.icons8.com/sf-black-filled/32/F25081/hand-cursor.png'), auto !important;
+}
+
+
+
+
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #232e3b;
+  border-radius: 2px;
+}
+
+
+
+.wrapper {
+  width: 100%;
+  min-height: 100vh;
+
+}
+
+
+a {
+  text-decoration: none !important;
+}
